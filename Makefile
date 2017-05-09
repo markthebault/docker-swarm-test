@@ -1,3 +1,4 @@
+all: create-machines init-swarm join-workers start-interface
 create-machines:
 	docker-machine create --driver virtualbox swarm-master
 	docker-machine create --driver virtualbox swamr-worker-1
